@@ -1,6 +1,8 @@
+import math
+
 sive = [True] * 2000000
 
-for i in range(2, len(sive)):
+for i in range(2, int(math.sqrt(len(sive)))):
     if sive[i]:
         k = 2
         while (i * k < len(sive)):
